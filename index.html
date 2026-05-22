@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa Processual • Secretaria Maçônica</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style></style>
+  </head>
+  <body
+    class="min-h-screen overflow-x-hidden text-slate-900 dark:text-white transition-colors duration-300"
+  >
+    <div class="max-w-7xl mx-auto px-6 py-10">
+      <!-- HERO -->
+      <div class="mb-10 flex flex-wrap items-start justify-between gap-6">
+        <div>
+          <div
+            class="inline-flex items-center gap-3 px-4 py-2 rounded-full glass text-yellow-600 dark:text-yellow-400 text-sm font-semibold mb-6"
+          >
+            ✦ Secretaria Maçônica Digital
+          </div>
+
+          <h1
+            class="text-5xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-slate-900 to-yellow-600 dark:from-white dark:to-yellow-400 bg-clip-text text-transparent"
+          >
+            Mapa Processual
+          </h1>
+
+          <p
+            class="text-slate-600 dark:text-slate-400 mt-5 max-w-3xl leading-8 text-lg"
+          >
+            Ferramenta simples para auxiliar na consulta dos processos
+            administrativos e processuais da secretaria de Loja Maçônica.
+          </p>
+        </div>
+
+        <button
+          id="themeToggle"
+          type="button"
+          class="glass shrink-0 flex items-center gap-2 px-4 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 text-sm font-semibold text-slate-700 dark:text-slate-200 hover:border-yellow-500/40 transition-all duration-300"
+          aria-label="Alternar tema"
+        >
+          <span class="theme-icon-light hidden" aria-hidden="true">☀️</span>
+          <span class="theme-icon-dark" aria-hidden="true">🌙</span>
+          <span class="theme-toggle-label">Modo claro</span>
+        </button>
+      </div>
+
+      <!-- LAYOUT -->
+      <div class="grid lg:grid-cols-[320px_1fr] gap-8">
+        <!-- SIDEBAR -->
+        <aside class="glass rounded-3xl p-6 h-fit sticky top-6">
+          <div class="mb-6">
+            <h2 class="text-xl font-bold mb-2">Processos</h2>
+
+            <p class="text-slate-600 dark:text-slate-400 text-sm">
+              Selecione o procedimento desejado.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <button
+              class="process-btn w-full text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
+              data-process="consulta"
+            >
+              🔎 Consulta Livros Negro e Amarelo
+            </button>
+            <button
+              class="process-btn w-full text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
+              data-process="iniciacao"
+            >
+              🜁 Iniciação
+            </button>
+
+            <button
+              class="process-btn w-full text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
+              data-process="elevacao"
+            >
+              ⬆ Elevação
+            </button>
+
+            <button
+              class="process-btn w-full text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
+              data-process="exaltacao"
+            >
+              ✦ Exaltação
+            </button>
+
+            <button
+              class="process-btn w-full text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
+              data-process="filiacao"
+            >
+              🤝 Filiação de Obreiro
+            </button>
+
+            <button
+              class="process-btn w-full text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
+              data-process="regularizacao"
+            >
+              📜 Regularização de Obreiro
+            </button>
+
+            <button
+              class="process-btn w-full text-left p-4 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300"
+              data-process="quitplacet"
+            >
+              🧾 Quit Placet
+            </button>
+          </div>
+        </aside>
+
+        <!-- CONTEUDO -->
+        <main id="contentArea" class="glass rounded-3xl p-8 fade-enter"></main>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

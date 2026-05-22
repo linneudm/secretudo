@@ -1,0 +1,146 @@
+{
+  "consulta": {
+    "titulo": "Consulta nos Livros Negro e Amarelo",
+    "descricao": "Necessário para o <button class='text-yellow-400 font-bold' onclick='renderProcesso(\"iniciacao\")'>processo de iniciação</button> e <button class='text-yellow-400 font-bold' onclick='renderProcesso(\"regularizacao\")'>regularização</button> de maçons oriundos de potências não reconhecidas.",
+    "documentos": [],
+    "etapas": [
+      {
+        "titulo": "Consulta",
+        "descricao": "Informar RG, CPF e nome completo e aguardar o nada consta."
+      }
+    ]
+  },
+  "iniciacao": {
+    "titulo": "Processo de Iniciação",
+    "descricao": "Fluxo completo para admissão de candidato à Maçonaria.",
+    "documentos": [
+      "Formulário de indicação devidamente preenchido",
+      "Documento com foto 3x4",
+      "Certidões negativas de feitos cíveis e criminais",
+      "Cópia da identidade e CPF"
+    ],
+    "etapas": [
+      {
+        "titulo": "Consulta nos Livros Negro e Amarelo",
+        "descricao": "Informar RG, CPF e nome completo e aguardar o nada consta."
+      },
+      {
+        "titulo": "Votação em Loja",
+        "descricao": "A proposta de iniciação deverá ser apreciada em loja aberta por duas vezes."
+      },
+      {
+        "titulo": "Publicação em Boletim Oficial",
+        "descricao": "Após aprovado em loja aberta, solicitar a publicação em boletim oficial. Encaminhar a ficha de indicação devidamente preenchida com foto digitalizada."
+      },
+      {
+        "titulo": "Prazo de Publicação",
+        "descricao": "Aguardar 15 dias da publicação em boletim oficial."
+      },
+      {
+        "titulo": "Sindicâncias",
+        "descricao": "Não havendo objeção, o VM deverá solicitar em segredo a no mínimo três mestres maçons que realizem as sindicâncias."
+      },
+      {
+        "titulo": "Leitura e Escrutínio",
+        "descricao": "Os formulários de sindicância serão lidos em loja e posteriormente será realizado o escrutínio secreto."
+      },
+      {
+        "titulo": "Solicitação do Placet",
+        "descricao": "Aprovado o candidato, a loja solicita o placet de iniciação à Guarda dos Selos, anexando o formulário devidamente preenchido e assinado."
+      },
+      {
+        "titulo": "Cerimônia de Iniciação",
+        "descricao": "Após o recebimento do placet assinado e cumprimento dos metais pertinentes, a loja poderá realizar a cerimônia de iniciação."
+      },
+      {
+        "titulo": "Comunicação da Iniciação",
+        "descricao": "Após a cerimônia, no prazo máximo de 72h, a loja deverá enviar o formulário de comunicado de iniciação devidamente preenchido e assinado."
+      }
+    ]
+  },
+  "elevacao": {
+    "titulo": "Processo de Elevação",
+    "descricao": "Fluxo administrativo para elevação de grau.",
+    "documentos": [
+      "Formulário de comunicação de grau devidamente preenchido"
+    ],
+    "etapas": [
+      {
+        "titulo": "Cerimônia de Elevação",
+        "descricao": "Respeitando o interstício previsto no regulamento vigente da potência, a loja realiza a cerimônia de elevação."
+      },
+      {
+        "titulo": "Comunicação à Guarda dos Selos",
+        "descricao": "Após a cerimônia, a loja comunica o ato à Guarda dos Selos encaminhando o formulário devidamente preenchido."
+      },
+      {
+        "titulo": "Pagamento dos Metais",
+        "descricao": "A loja efetua o pagamento dos metais pertinentes ao ato."
+      }
+    ]
+  },
+  "exaltacao": {
+    "titulo": "Exaltação",
+    "descricao": "Processo ainda não implementado.",
+    "documentos": [
+      "TODO"
+    ],
+    "etapas": [
+      {
+        "titulo": "TODO",
+        "descricao": "Processo será implementado posteriormente."
+      }
+    ]
+  },
+  "filiacao": {
+    "titulo": "Filiação de Obreiro",
+    "descricao": "Processo ainda não implementado.",
+    "documentos": [
+      "Formulário de Atualização Cadastral do Obreiro",
+      "Solicitação de filiação do Ir. requerente devidamente assinada",
+      "Ata em que foi votada a filiação do Ir.",
+      "Ata em que foi realizada a filiação do Ir.",
+      "Comunicado de filiação"
+    ],
+    "etapas": [
+      {
+        "titulo": "Solicitação de filiação",
+        "descricao": "A loja deverá solicitar a Guarda dos Selos a filiação, anexando o formulário de atualização cadastral, a solicitação assinada pelo requerente e a ata em que a loja deliberou a solicitação."
+      },
+      {
+        "titulo": "Inclusão do obreiro no quadro da loja",
+        "descricao": "A loja deverá aguardar a inclusão do obreiro no quadro da loja."
+      },
+      {
+        "titulo": "Comunicação de filiação",
+        "descricao": "A loja deverá realizar a cerimônia de filiação do obreiro, enviando a ata em que foi realizada a cerimônia e o formulário de comunicação de filiação."
+      }
+    ]
+  },
+  "regularizacao": {
+    "titulo": "Regularização de Obreiro",
+    "descricao": "Processo ainda não implementado.",
+    "documentos": [
+      "TODO"
+    ],
+    "etapas": [
+      {
+        "titulo": "TODO",
+        "descricao": "Processo será implementado posteriormente."
+      }
+    ]
+  },
+  "quitplacet": {
+    "titulo": "Quit Placet",
+    "descricao": "Processo ainda não implementado.",
+    "documentos": [
+      "TODO"
+    ],
+    "etapas": [
+      {
+        "titulo": "TODO",
+        "descricao": "Processo será implementado posteriormente."
+      }
+    ]
+  }
+}

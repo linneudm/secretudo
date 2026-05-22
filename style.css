@@ -1,0 +1,120 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+html.dark body {
+  background:
+    radial-gradient(circle at top left,
+      rgba(212, 175, 55, 0.12),
+      transparent 22%),
+    radial-gradient(circle at bottom right,
+      rgba(59, 130, 246, 0.1),
+      transparent 28%),
+    radial-gradient(circle at center,
+      rgba(255, 255, 255, 0.03),
+      transparent 35%),
+    linear-gradient(135deg,
+      #020617 0%,
+      #081226 25%,
+      #0b1120 50%,
+      #111827 100%);
+}
+
+html:not(.dark) body {
+  background:
+    radial-gradient(circle at top left,
+      rgba(212, 175, 55, 0.18),
+      transparent 24%),
+    radial-gradient(circle at bottom right,
+      rgba(59, 130, 246, 0.08),
+      transparent 30%),
+    linear-gradient(135deg,
+      #f8fafc 0%,
+      #f1f5f9 45%,
+      #e2e8f0 100%);
+}
+
+.glass {
+  backdrop-filter: blur(18px);
+  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+html.dark .glass {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+html:not(.dark) .glass {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+.timeline-line::before {
+  content: "";
+
+  position: absolute;
+
+  left: 18px;
+
+  /*
+começa no centro do primeiro ícone
+*/
+  top: 18px;
+
+  /*
+termina no centro do último ícone
+*/
+  bottom: 190px;
+
+  width: 2px;
+
+  background: linear-gradient(to bottom,
+      #d4af37,
+      rgba(212, 175, 55, 0.25));
+
+  border-radius: 999px;
+}
+
+.process-btn.active {
+  transform: translateY(-2px);
+}
+
+html.dark .process-btn.active {
+  background: linear-gradient(135deg,
+      rgba(212, 175, 55, 0.18),
+      rgba(255, 255, 255, 0.03));
+  border-color: rgba(212, 175, 55, 0.45);
+}
+
+html:not(.dark) .process-btn.active {
+  background: linear-gradient(135deg,
+      rgba(212, 175, 55, 0.22),
+      rgba(255, 255, 255, 0.9));
+  border-color: rgba(180, 140, 30, 0.55);
+}
+
+.fade-enter {
+  animation: fade 0.35s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
